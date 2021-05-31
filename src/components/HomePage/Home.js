@@ -117,10 +117,13 @@ const Home = () => {
       </div>
 
       <div className="min-h-screen bg-gray-100">
-        <div className="container flex flex-col items-center px-4 py-16  md:flex-row  justify-around ">
-          <div className="container items-center px-5 py-12 lg:px-20">
+        <div className="text-6xl mx-auto text-center pt-12">
+          Recent Projects
+        </div>
+        <div className="container flex flex-col items-center px-4 pt-8  md:flex-row mx-auto ">
+          <div className="container items-center px-5 py-12 lg:px-20 ">
             <div className="flex flex-wrap ">
-              <div className="w-full md:mx-36 my-4 bg-white border rounded-lg shadow-xl lg:w-1/4">
+              <div className="w-full  my-4 bg-white border rounded-lg shadow-xl">
                 <div className="p-6">
                   <h2 className="mb-8 text-sm font-semibold tracking-widest text-black uppercase title-font">
                     {" "}
@@ -135,7 +138,78 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div>test 2</div>
+          <div className="container items-center px-5 py-12 lg:px-20 ">
+            <div className="flex flex-wrap ">
+              <div className="w-full  my-4 bg-white border rounded-lg shadow-xl">
+                <div className="p-6">
+                  <h2 className="mb-8 text-sm font-semibold tracking-widest text-black uppercase title-font">
+                    {" "}
+                    EMS Protcol App
+                  </h2>
+                  <p className="mb-3 text-base leading-relaxed text-gray-500">
+                    Built from the ground up - This create, read, update, and
+                    delete app was designed for EMS needs in mind.
+                  </p>
+                  <a
+                    href="https://protocol-ems.herokuapp.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="hover:text-pink-600"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container items-center px-5 py-12 lg:px-20 ">
+            <div className="flex flex-wrap ">
+              <div className="w-full  my-4 bg-white border rounded-lg shadow-xl">
+                <div className="p-6">
+                  <h2 className="mb-8 text-sm font-semibold tracking-widest text-black uppercase title-font">
+                    {" "}
+                    Pat McAfee Soundboard
+                  </h2>
+                  <p className="mb-3 text-base leading-relaxed text-gray-500">
+                    Fan made website for my favorite sports show. Beware that
+                    some audio may be NSFW.
+                  </p>
+                  <a
+                    href="https://druashley.github.io/PMI-Soundboard/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="hover:text-pink-600"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container items-center px-5 py-12 lg:px-20 ">
+            <div className="flex flex-wrap ">
+              <div className="w-full  my-4 bg-white border rounded-lg shadow-xl">
+                <div className="p-6">
+                  <h2 className="mb-8 text-sm font-semibold tracking-widest text-black uppercase title-font">
+                    {" "}
+                    NBA Stats
+                  </h2>
+                  <p className="mb-3 text-base leading-relaxed text-gray-500">
+                    On my Github you will find a NBA app I made to display
+                    stats. I will be remaking this project sometime soon.
+                  </p>
+                  <a
+                    href="https://github.com/Druashley/NBA-API"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="hover:text-pink-600"
+                  >
+                    Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

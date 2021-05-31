@@ -120,10 +120,10 @@ const Home = () => {
         <div className="text-6xl mx-auto text-center pt-12">
           Recent Projects
         </div>
-        <div className="container flex flex-col items-center px-4 pt-8  md:flex-row mx-auto ">
+        <div className="container flex flex-col items-center px-4 pt-8 mx-auto ">
           <div className="container items-center px-5 py-12 lg:px-20 ">
             <div className="flex flex-wrap ">
-              <div className="w-full  my-4 bg-white border rounded-lg shadow-xl">
+              <div className="w-full  my-4 bg-white border rounded-lg shadow-xl ">
                 <div className="p-6">
                   <h2 className="mb-8 text-sm font-semibold tracking-widest text-black uppercase title-font">
                     {" "}
@@ -133,7 +133,6 @@ const Home = () => {
                     This is my third iteration of my homepage. It will include a
                     database for journal entries.
                   </p>
-                  <p></p>
                 </div>
               </div>
             </div>

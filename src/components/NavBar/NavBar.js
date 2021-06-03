@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AuthOptions from "../auth/AuthOptions";
 
 const NavBar = () => {
   return (
@@ -35,13 +36,14 @@ const NavBar = () => {
               to="/"
               className="justify-center focus:outline-none md:ml-auto md:mr-24"
             >
-              <div className="inline-flex items-center pt-6 md:pt-0 ">
+              <div className="inline-flex items-center pt-4 md:py-0 ">
                 <div className="w-2 h-2 p-2 rounded-full bg-gradient-to-tr from-blue-500 to-pink-600"></div>
                 <h2 className="block p-2 text-2xl font-medium tracking-tighter text-black transition duration-500 ease-in-out transform cursor-pointer hover:text-blue-700 lg:text-x lg:mr-8">
                   Druashley
                 </h2>
               </div>
             </Link>
+            <AuthOptions />
           </div>
         </div>
       </div>

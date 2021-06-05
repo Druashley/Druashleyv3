@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="container items-center mx-auto">
-      <footer className="text-gray-700 transition duration-500 ease-in-out transform bg-white border rounded-lg rounded-t-none ">
+      <footer className="text-gray-700 transition duration-500 ease-in-out transform bg-white border rounded-lg rounded-t-none bg-gradient-to-r from-blue-100  to-pink-100 border">
         <div className="flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row">
           <a href="/" className="pr-2 lg:pr-8 lg:px-6 focus:outline-none">
             <div className="inline-flex items-center text-center pb-4">

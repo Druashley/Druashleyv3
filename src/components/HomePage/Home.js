@@ -116,7 +116,7 @@ const Home = () => {
         <img className=" pt-4 md:pt-12 md:w-1/2" src={code} alt="Thinking" />
       </div>
 
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-gradient-to-r from-gray-100  to-red-50 border">
         <div className="text-6xl mx-auto text-center pt-12">
           Recent Projects
         </div>

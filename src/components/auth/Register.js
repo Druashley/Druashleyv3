@@ -39,7 +39,7 @@ export default function Register() {
   };
 
   return (
-    <div className="container items-center py-12 mx-auto">
+    <div className="min-h-screen  container items-center py-12 mx-auto">
       <div className=" flex flex-col w-full p-10 mx-auto my-6 transition duration-500 ease-in-out transform bg-white border rounded-lg lg:w-2/6 md:w-1/2 md:mt-0">
         <h2 className="bold text-3xl text-center">Register</h2>
         {error && (

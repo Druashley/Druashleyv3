@@ -7,11 +7,13 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import UserContext from "./context/UserContext";
 import Axios from "axios";
+import JournalPage from "./pages/JournalPage";
 
 function App() {
   const [userData, setUserData] = useState({
     token: undefined,
     user: undefined,
+    role: "User",
   });
 
   useEffect(() => {
@@ -33,6 +35,7 @@ function App() {
         setUserData({
           token,
           user: userRes.data,
+          role: userRes.data.role,
         });
       }
     };
@@ -48,6 +51,7 @@ function App() {
           <Route path="/" exact component={HomePage} />
           <Route path="/login" exact component={Login} />
           <Route path="/register" exact component={Register} />
+          <Route path="/journal" exact component={JournalPage} />
         </Switch>
         <Footer />
       </UserContext.Provider>

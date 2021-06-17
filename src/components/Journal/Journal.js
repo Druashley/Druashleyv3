@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import UserContext from "../../context/UserContext";
 import ErrorNotice from "../misc/ErrorNotice";
 import Axios from "axios";
+import JournalPost from "./JournalPost";
 
 export default function Journal() {
   const { userData } = useContext(UserContext);
@@ -43,8 +44,6 @@ export default function Journal() {
 
   return (
     <div className="container mx-auto min-h-screen pt-14">
-      <div>Journal Info here</div>
-      <button onClick={console.log(journalPosts)}>click</button>
       {error && (
         <ErrorNotice message={error} clearError={() => setError(undefined)} />
       )}
@@ -79,6 +78,16 @@ export default function Journal() {
       ) : (
         ""
       )}
+      {journalPosts && journalPosts.posts.length > 0
+        ? journalPosts.posts.map((post) => {
+            return (
+              <JournalPost
+                journalTitle={post.journalTitle}
+                journalBody={post.journalBody}
+              />
+            );
+          })
+        : "No Journal Posts"}
     </div>
   );
 }
